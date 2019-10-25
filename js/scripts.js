@@ -11,6 +11,7 @@ $(document).ready(function()
   $("form#nameForm").hide();
   $("form#suggestForm").show();
   $(".formPage").show();
+  $(".username").text(name);
 
   event.preventDefault();
   });
@@ -54,6 +55,5 @@ $(document).ready(function()
       $("#quizButton").hide();
       $(".formPage").show();
       $("form#suggestForm").show();
-
-    })
+    });
 });

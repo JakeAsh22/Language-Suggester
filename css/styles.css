@@ -2,6 +2,10 @@
 {
   display: none;
 }
+h2.answer
+{
+  font-style: italic;
+}
 .formPage
 {
   display: none;
@@ -9,4 +13,13 @@
 #quizButton
 {
   display: none;
+}
+body
+{
+  background-color: silver;
+}
+img
+{
+  width: 300px;
+  height:auto;
 }
