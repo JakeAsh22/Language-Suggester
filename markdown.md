@@ -14,7 +14,7 @@ To set up and install this portfolio, download the master branch off Github, and
 
 ## GitHub pages
 
-The link to the GitHub pages for this website is: https://jakeash22.github.io/Portfolio/
+The link to the GitHub pages for this website is: https://jakeash22.github.io/Language-Suggester/
 
 ### License
 MIT License
