@@ -12,9 +12,9 @@ $(document).ready(function()
   $("form#suggestForm").show();
   $(".formPage").show();
   $(".username").text(name);
-
   event.preventDefault();
   });
+
   $("form#suggestForm").submit(function(event)
   {
     event.preventDefault();
@@ -48,6 +48,7 @@ $(document).ready(function()
       $("#quizButton").show();
     }
   });
+
   $("form#resultsPage").submit(function(event)
     {
       event.preventDefault();
