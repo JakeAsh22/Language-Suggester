@@ -10,6 +10,8 @@ $(document).ready(function()
   var name = $("#name").val();
   $("form#nameForm").hide();
   $("form#suggestForm").show();
+  $(".formPage").show();
+
   event.preventDefault();
   });
   $("form#suggestForm").submit(function(event)
@@ -23,11 +25,12 @@ $(document).ready(function()
     var question6 = parseInt($("input:radio[name=choice6]:checked").val());
     var results= calculate(question1,question2,question3,question4,question5,question6);
     $(".answers").hide();
-    $("#quizButton").hide();
+    $(".formPage").hide();
     $("form#suggestForm").hide();
     if (results>1)
     {
       $("#javaScript").show();
+      $("#quizButton").show();
     }
     else if (results==0) {
       $("#cSharp").show();
@@ -48,6 +51,9 @@ $(document).ready(function()
     {
       event.preventDefault();
       $(".answers").hide();
+      $("#quizButton").hide();
+      $(".formPage").show();
       $("form#suggestForm").show();
+
     })
 });
