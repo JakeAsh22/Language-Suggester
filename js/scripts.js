@@ -23,6 +23,7 @@ $(document).ready(function()
     var question6 = parseInt($("input:radio[name=choice6]:checked").val());
     var results= calculate(question1,question2,question3,question4,question5,question6);
     $(".answers").hide();
+    $("#quizButton").hide();
     $("form#suggestForm").hide();
     if (results>1)
     {
@@ -30,17 +31,20 @@ $(document).ready(function()
     }
     else if (results==0) {
       $("#cSharp").show();
+      $("#quizButton").show();
     }
     else if (results<-1)
     {
       $("#java").show();
+      $("#quizButton").show();
     }
     else
     {
       $("#error").show();
+      $("#quizButton").show();
     }
   });
-  $("#error").submit(function(event)
+  $("form#resultsPage").submit(function(event)
     {
       event.preventDefault();
       $(".answers").hide();
