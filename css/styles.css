@@ -2,7 +2,7 @@
 {
   display: none;
 }
-h2.answer
+.answers
 {
   font-style: italic;
 }
@@ -16,10 +16,14 @@ h2.answer
 }
 body
 {
-  background-color: silver;
+  background-color: #f7f7f7;
 }
 img
 {
   width: 300px;
   height:auto;
+}
+.card
+{
+  padding: 10px;
 }

@@ -11,104 +11,106 @@
   <body>
     <div class="container">
       <h1>Programming Language Suggester</h1>
-
       <form id="nameForm">
-        <div class="form-group">
-          <label for="name">Please enter your name:</label>
-          <input id="name" class="form-control" type="text">
-        </div>
-        <button type="submit" name="button" class="btn btn-danger">Submit</button>
+          <div class="form-group">
+            <label for="name">Please enter your name:</label>
+            <input id="name" class="form-control" type="text">
+          </div>
+          <button type="submit" name="button" class="btn btn-danger">Submit</button>
+        </form>
+
+        <h4 class="formPage">Please answer each question, then hit submit to find out which programming language is for you!</h4>
+        <br>
+
+        <form id="suggestForm" class="formPage">
+          <div class="card">
+            <h5>Are you an early bird, or a night owl?</h5>
+            <div class="radio">
+              <label>
+                <input type="radio" name="choice1" value="1">
+                a.Early bird
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="choice1" value="-1">
+                b.Night owl
+              </label>
+            </div>
+
+            <h5>Would you rather be indoors or outdoors during your weekend</h5>
+            <div class="radio">
+              <label>
+                <input type="radio" name="choice2" value="1">
+                a. Indoors
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="choice2" value="-1">
+                b. Outdoors
+              </label>
+            </div>
+
+            <h5>Would you like web deveolpment or app deveolpment?</h5>
+            <div class="radio">
+              <label>
+                <input type="radio" name="choice3" value="1">
+                a. Web deveolpment
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="choice3" value="-1">
+                b. App deveolpment
+              </label>
+            </div>
+
+            <h5>Do you prefer Netflix, or Hulu?</h5>
+            <div class="radio">
+              <label>
+                <input type="radio" name="choice4" value="1">
+                a. Netflix
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="choice4" value="-1">
+                b. Hulu
+              </label>
+            </div>
+
+            <h5>Do you like MacOS or windows interface more?</h5>
+            <div class="radio">
+              <label>
+                <input type="radio" name="choice5" value="1">
+                a. Mac
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="choice5" value="-1">
+                a. Windows
+              </label>
+            </div>
+
+            <h5>Do you like to work in groups, or are you a lone wolf?</h5>
+            <div class="radio">
+              <label>
+                <input type="radio" name="choice6" value="1">
+                a. In groups
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="choice6" value="-1">
+                b. Lone Wolf
+              </label>
+            </div>
+          </div>
+          <button type="submit" name="button" class="btn btn-danger">See results</button>
       </form>
 
-      <h4 class="formPage">Please answer each question, then hit submit to find out which programming language is for you!</h4>
-      <br>
-
-      <form id="suggestForm" class="formPage">
-        <h5>Are you an early bird, or a night owl?</h5>
-        <div class="radio">
-          <label>
-            <input type="radio" name="choice1" value="1">
-            a.Early bird
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="choice1" value="-1">
-            b.Night owl
-          </label>
-        </div>
-
-        <h5>Would you rather be indoors or outdoors during your weekend</h5>
-        <div class="radio">
-          <label>
-            <input type="radio" name="choice2" value="1">
-            a. Indoors
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="choice2" value="-1">
-            b. Outdoors
-          </label>
-        </div>
-
-        <h5>Would you like web deveolpment or app deveolpment?</h5>
-        <div class="radio">
-          <label>
-            <input type="radio" name="choice3" value="1">
-            a. Web deveolpment
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="choice3" value="-1">
-            b. App deveolpment
-          </label>
-        </div>
-
-        <h5>Do you prefer Netflix, or Hulu?</h5>
-        <div class="radio">
-          <label>
-            <input type="radio" name="choice4" value="1">
-            a. Netflix
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="choice4" value="-1">
-            b. Hulu
-          </label>
-        </div>
-
-        <h5>Do you like MacOS or windows interface more?</h5>
-        <div class="radio">
-          <label>
-            <input type="radio" name="choice5" value="1">
-            a. Mac
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="choice5" value="-1">
-            a. Windows
-          </label>
-        </div>
-
-        <h5>Do you like to work in groups, or are you a lone wolf?</h5>
-        <div class="radio">
-          <label>
-            <input type="radio" name="choice6" value="1">
-            a. In groups
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="choice6" value="-1">
-            b. Lone Wolf
-          </label>
-        </div>
-        <button type="submit" name="button" class="btn btn-danger">See results</button>
-      </form>
       <form id= resultsPage>
         <div id="javaScript" class="answers">
           <h2>JavaScript</h2>
@@ -130,6 +132,7 @@
         </div>
         <button type="submit" name="button" class="btn btn-danger" id="quizButton">Back to quiz</button>
       </form>
+
     </div>
   </body>
 </html>
