@@ -6,9 +6,18 @@ var calculate = function(choice1,choice2,choice3,choice4,choice5,choice6)
 
 $(document).ready(function()
 {
+  $("form#nameForm").submit(function(event)
+  {
+  var name = $("#name");
+  alert(name);
+  $("form#nameForm").hide();
+  $("form#suggestForm").show();
+  event.preventDefault();
+  });
   $("form#suggestForm").submit(function(event)
   {
     event.preventDefault();
+    alert(name);
     var question1 = parseInt($("input:radio[name=choice1]:checked").val());
     var question2 = parseInt($("input:radio[name=choice2]:checked").val());
     var question3 = parseInt($("input:radio[name=choice3]:checked").val());
@@ -16,7 +25,8 @@ $(document).ready(function()
     var question5 = parseInt($("input:radio[name=choice5]:checked").val());
     var question6 = parseInt($("input:radio[name=choice6]:checked").val());
     var results= calculate(question1,question2,question3,question4,question5,question6);
-
+    $(".answers").hide();
+    $("form#suggestForm").hide();
     if (results>1)
     {
       $("#javaScript").show();

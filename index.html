@@ -11,10 +11,18 @@
   <body>
     <div class="container">
       <h1>Language Suggester</h1>
-      <h4>Please answer each question, then hit submit to find out which programming language is for you!</h4>
-      <br>
 
-      <form id="suggestForm">
+      <form id="nameForm">
+        <div class="form-group">
+          <label for="name">Please enter your name:</label>
+          <input id="name" class="form-control" type="text">
+        </div>
+        <button type="submit" name="button" class="btn btn-danger">Submit</button>
+      </form>
+
+      <h4 class="formPage">Please answer each question, then hit submit to find out which programming language is for you!</h4>
+      <br>
+      <form id="suggestForm" class="formPage">
         <h5>Are you an early bird, or a night owl?</h5>
         <div class="radio">
           <label>
