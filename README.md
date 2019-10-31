@@ -1,4 +1,4 @@
-# _**Portfolio**_
+# _**Language Selector**_
 
 ##### Brief Description
 This website is a quiz that determines which programming language the user should learn.
